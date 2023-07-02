@@ -2,7 +2,7 @@ import express from "express";
 
 import bodyParser from "body-parser";
 
-import todoRoutes from "./routes/todos.js";
+import todosRoutes from "./routes/todos.js";
 
 const app = express();
 
@@ -13,6 +13,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(todoRoutes);
+app.use(todosRoutes);
 
 app.listen(3000);
